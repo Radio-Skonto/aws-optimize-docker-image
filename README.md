@@ -19,4 +19,23 @@ USER appuser
 ```
 docker scan your-image:tag
 ```
-5) 
+5) Use .dockerignore file: Docker ignore similar to .gitignore. It lets you exclude specific files and directories from your final image.
+```
+# Exclude virtual environment
+venv/
+# Exclude cache, logs, and temporary files
+__pycache__/
+*.log
+*.tmp
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.git
+.gitignore
+README.md
+# Exclude model training checkpoints and tensorboard logs
+checkpoints/
+runs/
+```
+6) 
